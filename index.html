@@ -1,0 +1,308 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio | Vijju</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">PortFolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#resume">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I'm G. VijayaLakshmi</h3>
+            <p>I'm a <span class="multiple-text"></span></p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/g-vijayalakshmi-0b1a1b1b2/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.github.com/vijayalakshmig1/" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <a href="VijayaLakshmi-Gedala-Resume.pdf" download class="btn">Download CV</a>
+
+        </div>
+        <div class="home-img">
+            <img src="photo.jpg" alt="My Photo">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="photo.jpg" alt="About Me">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Full Stack Developer</h3>
+            <p>Motivated and fast-learning full stack developer with a strong foundation in both frontend and backend technologies. Passionate about building dynamic, scalable, and user-centric applications. Hands-on experience with HTML, CSS, JavaScript,
+                React, Python, Node.js, SQL, and MongoDB. Strong communication and leadership skills with a collaborative mindset.
+            </p>
+            <div id="more-info" style="display: none;">
+                <p>
+                    I enjoy turning complex problems into simple, beautiful, and intuitive solutions. Whether it’s working on the frontend with React or managing backend logic with Node.js and MongoDB, I’m always excited to learn and grow. I’m a quick learner with hands-on
+                    experience in HTML, CSS, JavaScript, Python, and MongoDB.
+                </p>
+                <p>I’ve worked on several projects that involved teamwork, tight deadlines, and creative problem-solving — and I loved every part of it! Outside of tech, I enjoy mentoring juniors, exploring new technologies, and contributing to a collaborative
+                    and positive environment wherever I go. I'm always looking for opportunities to improve and make a real impact.
+                </p>
+            </div>
+            <button onclick="toggleMoreInfo()" class="btn">Read More</button>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <!--<section class="services" id="services">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Mobile App Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Font Awesome (put in <head> of your HTML) -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-box">
+                <h3><i class="fas fa-laptop-code"></i> FrontEnd</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3><i class="fas fa-server"></i> BackEnd</h3>
+                <ul>
+                    <li>Node JS</li>
+                    <li>MongoDB</li>
+                    <li>Express JS</li>
+                    <li>APIs</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3><i class="fas fa-code-branch"></i> Tools</h3>
+                <ul>
+                    <li>GitHub (VCS)</li>
+                    <li>VS Code Editor</li>
+                    <li>Canva</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3><i class="fas fa-brain"></i> Artificial Intelligence</h3>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li> Building Agents</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3><i class="fas fa-pen-nib"></i> Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3><i class="fas fa-comments"></i> Communication</h3>
+                <ul>
+                    <li>Verbal & Written Skills</li>
+                    <li>Presentation</li>
+                    <li>Public Speaking</li>
+                    <li>Team Collaboration</li>
+                    <li>Group Discussions</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="image1.png" alt="Project 1" />
+                <div class="portfolio-layer">
+                    <h4>KingKush Hotel Booking Website</h4>
+                    <p>A clean, responsive hotel booking system where users can browse rooms, check availability, and make secure bookings. Built with frontend, Node.js with a modern UI.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image2.png" alt="Project 2" />
+                <div class="portfolio-layer">
+                    <h4>AI Agent for Browser Automation</h4>
+                    <p>A no-code AI agent built with Playwright to automate web tasks like navigation, data scraping, and multi-tab operations — all through an intuitive browser UI.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image3.png" alt="Project 3" />
+                <div class="portfolio-layer">
+                    <h4>Portfolio Website</h4>
+                    <p>A fully responsive personal website built using React and Tailwind CSS to showcase my skills, projects, and resume with a clean and modern UI.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="image4.png" alt="Project 4" />
+                <div class="portfolio-layer">
+                    <h4>Random Password Generator</h4>
+                    <p>A Python-based CLI tool that generates strong, customizable passwords using random letters, numbers, and special characters.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="resume-section" id="resume">
+        <h2 class="resume-title"></h2>
+
+        <div class="resume-container">
+
+            <!-- Left Column: Experience -->
+            <div class="timeline-column">
+                <h3><i class="fas fa-briefcase"></i> Experience</h3>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>MERN Stack Intern</h4>
+                        <p class="timeline-sub">Yubhain Technologies LLP</p>
+                        <ul>
+                            <li>Developed responsive web interfaces using React and Tailwind CSS</li>
+                            <li>Implemented interactive UI components and animations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Education -->
+            <div class="timeline-column">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>B.Tech in Computer Science and Technology</h4>
+                        <p class="timeline-sub">Sasi Institute of Technology | 2022 – Present</p>
+                        <p>GPA: 9.1</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Intermediate (MPC)</h4>
+                        <p class="timeline-sub">Narayana Junior College, Tanuku | 2020 – 2022</p>
+                        <p>GPA: 9.4</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>SSC</h4>
+                        <p class="timeline-sub">M.M English Medium School, Attili | 2019 – 2020</p>
+                        <p>GPA: 9.8</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="VijayaLakshmi-Gedala-Resume" download class="btn-download">
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" />
+                <input type="email" placeholder="Email Address" />
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" />
+                <input type="text" placeholder="Email Subject" />
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn" />
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2025 by @vijju | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- External Libraries -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Your JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
